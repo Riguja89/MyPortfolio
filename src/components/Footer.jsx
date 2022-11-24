@@ -1,12 +1,31 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 const Footer=()=>{
+    const bgStyle = { backgroundColor: "#f5f5f5" };
 
     return(
-        <div>
-            <h1>Get In Touch</h1>
-            Aca iría el pie de pagina que le quieres agregar
-        </div>
+        <footer style={bgStyle} className="mt-auto py-5 text-center ">
+      <Container>
+        
+        <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
+        <a
+          rel="noopener"
+          href="https://github.com/Riguja89"
+          aria-label="My GitHub"
+        > <span className="badge bg-dark">
+            Jaime Gutierrez
+          </span>
+        </a>{" "}
+        using <i className="fab fa-react" />
+        <p>
+          <small className="text-muted">
+            Project code is open source. Feel free to fork and make your own
+            version.
+          </small>
+        </p>
+      </Container>
+    </footer>
     );
 }
 
