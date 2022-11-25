@@ -8,6 +8,7 @@ import Proyects from './components/Proyects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <React.Fragment>  

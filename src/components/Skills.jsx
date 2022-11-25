@@ -3,7 +3,7 @@ import React from "react";
 const Skills=()=>{
 
     return(
-        <div>
+        <div id="skills">
             <h1>Skills</h1>
             Aca irían las cards para los Skills
         </div>
