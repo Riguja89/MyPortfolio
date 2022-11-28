@@ -7,23 +7,23 @@ const Home=()=>{
     const icons= [
         {
           image: "fa-github",
-          url: "https://github.com/riguja89",
+          url: "https://github.com/riguja89/",
         },
         {
           image: "fa-facebook",
-          url: "https://www.facebook.com/hashirshoaeb",
+          url: "https://www.facebook.com/jaimegr1/",
         },
-        {
-          image: "fa-instagram",
-          url: "https://www.instagram.com/hashirshoaeb/",
-        },
+        // {
+        //   image: "fa-instagram",
+        //   url: "https://www.instagram.com/hashirshoaeb/",
+        // },
         {
           image: "fa-linkedin",
-          url: "https://www.linkedin.com/in/hashirshoaeb/",
+          url: "https://www.linkedin.com/in/jaime-gutierrez-rios-b3143662/",
         },
         {
           image: "fa-twitter",
-          url: "https://www.twitter.com/hashirshoaeb/",
+          url: "https://twitter.com/JaimeGu15467988",
         },
       ]
 
@@ -48,7 +48,7 @@ const Home=()=>{
             Full Stack Developer | Ingineer | Programmer | Cyclist | Movie Lover 
             </div>
           {/* </Typist> */}
-          <div className="p-5">
+          <div className="p-5 ">
             {icons.map((icon, index) => (
               <a
                 key={`social-icon-${index}`}
@@ -56,8 +56,9 @@ const Home=()=>{
                 rel="noopener noreferrer"
                 href={icon.url}
                 aria-label={`My ${icon.image.split("-")[1]}`}
+                className="p-2"
               >
-                <i className={`fab ${icon.image}  fa-3x socialicons`} />
+                <i className={`fab ${icon.image}  fa-3x socialicons `} />
                
               </a>
             ))}
