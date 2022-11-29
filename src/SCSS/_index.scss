@@ -37,4 +37,21 @@ html {
       transition: all 0.8s;
       margin: 4px;
     }
+  
   }
+
+  .icontech {
+   width: 60px;
+}
+.cardskill{
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    font-weight: bold;
+    padding: 2px;
+    margin: 4px;
+}
+.skillcomponent{
+    display: flex;
+   flex-wrap: wrap;
+}
