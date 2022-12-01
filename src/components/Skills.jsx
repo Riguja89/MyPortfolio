@@ -2,8 +2,10 @@ import React from "react";
 import CardSkills from "./CardSkill";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Jumbotron from "./Jumbotron";
+import SoftSkillCard from "./SoftSkillCard";
 
-const techSkills=[{name:"CSS 3", img:"/static/media/css.svg"},
+const techSkills=[{name:"CSS", img:"/static/media/css.svg"},
 {name:"Bootstrap",img:"/static/media/bootstrap.svg"},
 {name:"HTML", img:"/static/media/html5.svg"},
 {name:"Java", img:"/static/media/java.svg"},
@@ -19,41 +21,65 @@ const techSkills=[{name:"CSS 3", img:"/static/media/css.svg"},
 {name:"Vue Js", img:"/static/media/vue.svg"},
 {name:"Express", img:"/static/media/express.svg"},
 {name:"Django", img:"/static/media/django.svg"},
+{name:"Git", img:"/static/media/git.svg"},
+{name:"GitHub", img:"/static/media/github.svg"},
+
+]
+
+const softkills=[
+    {name:"Colaboratividad", img:"/static/softskill/colaborativo.svg"},
+    {name:"Creatividad", img:"/static/softskill/creativity.svg"},
+    {name:"Orientado al Logro", img:"/static/softskill/goaloriented.svg"},
+    {name:"Resolución de problemas", img:"/static/softskill/problemsolving.svg"},
+    {name:"Empatía", img:"/static/softskill/empatia.svg"},
+    {name:"Positividad", img:"/static/softskill/positivo.svg"},
+    {name:"Organización", img:"/static/softskill/organizado.svg"},
+    {name:"Adaptabilidad", img:"/static/softskill/adaptativo.svg"},
 
 ]
 const Skills=()=>{
 
     return(
-        <div id="skills" >
-            <h1>Skills</h1>
+        <Jumbotron fluid className="bg-white m-0" id="skills" >
+            <h1  className="display-4 pb-5 text-center">Skills</h1>
         <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="TechSkills"
         id="uncontrolled-tab-example"
         className="mb-3"
+        fill
       >
         <Tab eventKey="TechSkills" title="Habilidades Técnica" >
-        aca las habilidades tecnias
+        
           <div className="skillcomponent">
             
 
                 {techSkills.map(skill=>(
-                     <CardSkills name={skill.name} img={skill.img}>
+                     <CardSkills key={skill.name} name={skill.name} img={skill.img}>
 
                      </CardSkills>
-                ))};
+                ))}
                
 
        
           </div>
         </Tab>
         <Tab eventKey="SoftSkills" title="Habilidades Blandas">
-          <div>
-            Aca van las habilidades blandas
-          </div>
+        <div className="skillcomponent">
+            
+
+            {softkills.map(skill=>(
+                 <SoftSkillCard key={skill.name} name={skill.name} img={skill.img}>
+
+                 </SoftSkillCard>
+            ))}
+           
+
+   
+      </div>
         </Tab>
       
       </Tabs>
-      </div>
+      </Jumbotron>
     );
 }
 

@@ -6,7 +6,11 @@ const Proyects=()=>{
 
 const proyects= [
     {
-      name: "Proyecto 1",
+      imgs: [{img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
+      name: "BarberShop App",
       phrace: "proyecot para ver proyecto 1",
       description:"Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
       urlrepo:"https://github.com/riguja89/",
@@ -14,6 +18,10 @@ const proyects= [
       usedTecnologies:["React", "Redux", "Expres"]
     },
     {
+        imgs: [{img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+        {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+        {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+        {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
         name: "Proyecto 2",
         phrace: "Proyecto para ver proyecto 2",
         description:"2 Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
@@ -44,9 +52,9 @@ const proyects= [
                     description={proyecto.description}
                     urlrepo={proyecto.urlrepo}
                     urldeploy={proyecto.urldeploy}
-                    usedTecnologies={proyecto.usedTecnologies}>
-                        
-                        
+                    usedTecnologies={proyecto.usedTecnologies}
+                    imgs={proyecto.imgs}  >
+                                        
 
                     </ProyectCard>
                 ))}

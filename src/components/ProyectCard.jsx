@@ -1,13 +1,13 @@
 import React from "react";
 import {Window,Github } from 'react-bootstrap-icons';
 import Card from "react-bootstrap/Card"
+import SlideImage from "./SlideImage";
 
 const ProyectCard=(props)=>{
 
     return(
         <Card border="dark" className="card card-outline-dark bg-dark my-3 p-2">
-            <img src="" alt="image-proyect" />
-           
+            <SlideImage imgs={props.imgs}></SlideImage>
             <Card.Title>{props.name}</Card.Title>
             <Card.Subtitle>{props.phrace}</Card.Subtitle>
             <Card.Text>{props.description}</Card.Text>

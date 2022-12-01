@@ -1,7 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 
-const CardSkills=(prop)=>{
+const SoftSkillCard=(prop)=>{
  
     return(
         <Card className="bg-s econdary cardskill">
@@ -14,4 +14,4 @@ const CardSkills=(prop)=>{
     );
 }
 
-export default CardSkills;
+export default SoftSkillCard;
