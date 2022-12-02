@@ -1,21 +1,25 @@
 import React from "react";
 import Jumbotron from "./Jumbotron";
 import ProyectCard from "./ProyectCard";
-
+import Row from "react-bootstrap/Row"
+import Container from "react-bootstrap/Container";
 const Proyects=()=>{
 
 const proyects= [
     {
       imgs: [{img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
-      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
-      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
-      {img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
+      {img:"/static/proyects/barbershop-tienda.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop-carrito.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop-turno.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop-login.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop-admin.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"/static/proyects/barbershop-abaut.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
       name: "BarberShop App",
-      phrace: "proyecot para ver proyecto 1",
+      phrace: "App E-commerce para ofrecer, gestionar y administrar servicios y productos de Barberías",
       description:"Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
-      urlrepo:"https://github.com/riguja89/",
-      urldeploy:"https://www.facebook.com/jaimegr1/",
-      usedTecnologies:["React", "Redux", "Expres"]
+      urlrepo:"https://github.com/Riguja89/Barbershop-e-commerce/",
+      urldeploy:"https://barbershop-front-deploy.vercel.app/",
+      usedTecnologies:[" React js, TypeScript, Redux, Mongodb, Mongoose, Express Js, Node Js, Tailwincss, Firebase."]
     },
     {
         imgs: [{img:"/static/proyects/barbershop.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
@@ -42,8 +46,9 @@ const proyects= [
         }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-            <h1 className="display-3 mb-5 text-center"> Recent Projects</h1>
-            <div  className="p-5 ">
+          <Container className="">
+            <h2 className="display-4 mb-5 text-center"> Recent Projects</h2>
+            <Row>
                 {proyects.map((proyecto)=>(
                     <ProyectCard 
                     key={proyecto.name}
@@ -58,7 +63,9 @@ const proyects= [
 
                     </ProyectCard>
                 ))}
-            </div>
+            
+            </Row>
+            </Container>
         </Jumbotron>
     )
 }

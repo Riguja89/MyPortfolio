@@ -32,11 +32,12 @@ const Home=()=>{
             <Jumbotron
         fluid
         id="home"
-        style={{
-          background: `linear-gradient(136deg, #4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1)`,
-          backgroundSize: "1200% 1200%",
-        }}
-        className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        // style={{
+        //   background: `linear-gradient(136deg, #4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1)`,
+        //   backgroundSize: "1200% 1200%",
+        // }}
+        // className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        className="wrapper"
       >
         <div id="stars"></div>
         <Container className="text-center">

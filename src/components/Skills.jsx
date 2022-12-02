@@ -30,9 +30,9 @@ const softkills=[
     {name:"Colaboratividad", img:"/static/softskill/colaborativo.svg"},
     {name:"Creatividad", img:"/static/softskill/creativity.svg"},
     {name:"Orientado al Logro", img:"/static/softskill/goaloriented.svg"},
-    {name:"Resolución de problemas", img:"/static/softskill/problemsolving.svg"},
     {name:"Empatía", img:"/static/softskill/empatia.svg"},
     {name:"Positividad", img:"/static/softskill/positivo.svg"},
+    {name:"Resolución de problemas", img:"/static/softskill/problemsolving.svg"},
     {name:"Organización", img:"/static/softskill/organizado.svg"},
     {name:"Adaptabilidad", img:"/static/softskill/adaptativo.svg"},
 

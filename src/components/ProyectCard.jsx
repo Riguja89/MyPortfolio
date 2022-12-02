@@ -2,10 +2,12 @@ import React from "react";
 import {Window,Github } from 'react-bootstrap-icons';
 import Card from "react-bootstrap/Card"
 import SlideImage from "./SlideImage";
+import Col from "react-bootstrap/Col"
 
 const ProyectCard=(props)=>{
 
     return(
+        <Col md={6}>
         <Card border="dark" className="card card-outline-dark bg-dark my-3 p-2">
             <SlideImage imgs={props.imgs}></SlideImage>
             <Card.Title>{props.name}</Card.Title>
@@ -17,7 +19,7 @@ const ProyectCard=(props)=>{
             Repo
             </a>
 
-            <a href={props.urlrdeploy} target="_blank" className="btn btn-outline-light btn-lg m-2"> 
+            <a href={props.urldeploy} target="_blank" className="btn btn-outline-light btn-lg m-2"> 
             <Window size={20} className="m-2" />
              Deploy
             </a>
@@ -32,6 +34,7 @@ const ProyectCard=(props)=>{
         
 
         </Card>
+        </Col>
     );
 }
 
