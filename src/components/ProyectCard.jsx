@@ -3,6 +3,7 @@ import {Window,Github } from 'react-bootstrap-icons';
 import Card from "react-bootstrap/Card"
 import SlideImage from "./SlideImage";
 import Col from "react-bootstrap/Col"
+import Accordion from 'react-bootstrap/Accordion';
 
 const ProyectCard=(props)=>{
 
@@ -12,7 +13,15 @@ const ProyectCard=(props)=>{
             <SlideImage imgs={props.imgs}></SlideImage>
             <Card.Title>{props.name}</Card.Title>
             <Card.Subtitle>{props.phrace}</Card.Subtitle>
-            <Card.Text>{props.description}</Card.Text>
+            <Card.Text>
+            <Accordion className="dark">
+            <Accordion.Header>Ver mas ...</Accordion.Header>
+        <Accordion.Body>
+        {props.description}
+        </Accordion.Body>
+            </Accordion>
+            
+            </Card.Text>
             <div>
             <a href={props.urlrepo} target="_blank" className="btn btn-outline-light btn-lg "> 
             <Github  size={20} className="m-2"/>
@@ -24,7 +33,7 @@ const ProyectCard=(props)=>{
              Deploy
             </a>
             </div>
-            <hr />
+          
             <p > Tecnologías usadas: 
             {props.usedTecnologies?(props.usedTecnologies.map(tec=>(
                 <>{ tec} </>
