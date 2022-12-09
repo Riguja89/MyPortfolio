@@ -31,9 +31,9 @@ const proyects= [
         name: "Video-Games APP",
         phrace: "App para buscar y filtrar Videojuegos existentes",
         description:"2 Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
-        urlrepo:"https://github.com/riguja89/",
-        urldeploy:"https://www.facebook.com/jaimegr1/",
-        usedTecnologies:["React: 80%", "Redux", "Expres"]
+        urlrepo:"https://github.com/Riguja89/VideoGames",
+        urldeploy:"https://videogame-clien-api.vercel.app/",
+        usedTecnologies:[" React Js, Redux, Node JS, Express JS, Postgesql, Html, CSS "]
     },
     {
       imgs: [{img:"/static/proyects/Weather-home.jpg", resume:" Este es la explicacion de la imagen de Fondo"},

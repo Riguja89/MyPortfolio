@@ -19,7 +19,7 @@ const NavBar=()=>{
         <Nav className="me-auto">
          
             <Nav.Link href="#proyects">Projects</Nav.Link>
-            <Nav.Link>Resume</Nav.Link>
+            <Nav.Link target="blanck" href="https://1drv.ms/b/s!AlSgIdEmzI5klrxgFeEXvKCJrOjtTA?e=6K0zLJ">Resume</Nav.Link>
             <Nav.Link href="#aboutme">About</Nav.Link>
             
             <Nav.Link href="#skills">
