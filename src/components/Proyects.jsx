@@ -33,7 +33,7 @@ const proyects= [
         description:"2 Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
         urlrepo:"https://github.com/Riguja89/VideoGames",
         urldeploy:"https://videogame-clien-api.vercel.app/",
-        usedTecnologies:[" React Js, Redux, Node JS, Express JS, Postgesql, Html, CSS "]
+        usedTecnologies:[" React Js, Redux, Node JS, Express JS, Sequelize, Postgesql, Html, CSS "]
     },
     {
       imgs: [{img:"/static/proyects/Weather-home.jpg", resume:" Este es la explicacion de la imagen de Fondo"},

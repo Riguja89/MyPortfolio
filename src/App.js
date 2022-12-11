@@ -7,21 +7,26 @@ import NavBar from './components/NavBar';
 import Proyects from './components/Proyects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
-import React from 'react';
+import React,{useState} from 'react';
 import Mailme from './components/Mailme';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+const[lengua, setLengua]=useState("eng")
+function toggleLengua(lengua){
+  setLengua(lengua);
+}
+
   return (
     <React.Fragment>  
-      <NavBar/>
+      <NavBar setLengua={toggleLengua} lengua={lengua}/>
     <Routes>   
     <Route path="/" element={<>
-      <Mailme/>
-    <Home/>
-    <AboutMe/>
-    <Proyects/>
-    <Skills/>
-    <Footer/>
+      <Mailme lengua={lengua}/>
+    <Home lengua={lengua}/>
+    <AboutMe lengua={lengua}/>
+    <Proyects lengua={lengua}/>
+    <Skills lengua={lengua}/>
+    <Footer lengua={lengua}/>
       </>} />
   
     

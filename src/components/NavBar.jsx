@@ -3,9 +3,9 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from 'react-bootstrap/Container';
-//import { Link } from "react-scroll";
+import Lenguaje from "./Lenguaje";
 
-const NavBar=()=>{
+const NavBar=({setLengua, lengua})=>{
 
     return(
         <>
@@ -18,17 +18,17 @@ const NavBar=()=>{
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
          
-            <Nav.Link href="#proyects">Projects</Nav.Link>
-            <Nav.Link target="blanck" href="https://1drv.ms/b/s!AlSgIdEmzI5klrxgFeEXvKCJrOjtTA?e=6K0zLJ">Resume</Nav.Link>
-            <Nav.Link href="#aboutme">About</Nav.Link>
+            <Nav.Link href="#proyects">{lengua=="eng"?<>Projects</>:<>Proyectos</>}</Nav.Link>
+            <Nav.Link target="blanck" href="https://1drv.ms/b/s!AlSgIdEmzI5klrxgFeEXvKCJrOjtTA?e=6K0zLJ">{lengua=="eng"?<>Resume</>:<>Currículum</>}</Nav.Link>
+            <Nav.Link href="#aboutme">{lengua=="eng"?<>About</>:<>Sobre mi</>}</Nav.Link>
             
             <Nav.Link href="#skills">
                 {/* <Link Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={1000} > Skills</Link> */}
-                Skills
+                {lengua=="eng"?<>Skills</>:<>Habilidades</>}
                </Nav.Link>
           
         </Nav>
-
+            <Lenguaje setLengua={setLengua}/>
         </Navbar.Collapse>
         </Container>
     </Navbar>
