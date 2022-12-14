@@ -26,29 +26,31 @@ const techSkills=[{name:"CSS", img:"/static/media/css.svg"},
 
 ]
 
-const softkills=[
-    {name:"Colaboratividad", img:"/static/softskill/colaborativo.svg"},
-    {name:"Creatividad", img:"/static/softskill/creativity.svg"},
-    {name:"Orientado al Logro", img:"/static/softskill/goaloriented.svg"},
-    {name:"Empatía", img:"/static/softskill/empatia.svg"},
-    {name:"Positividad", img:"/static/softskill/positivo.svg"},
-    {name:"Resolución de problemas", img:"/static/softskill/problemsolving.svg"},
-    {name:"Organización", img:"/static/softskill/organizado.svg"},
-    {name:"Adaptabilidad", img:"/static/softskill/adaptativo.svg"},
+
+const Skills=({lengua})=>{
+
+  const softkills=[
+    {name:lengua==="eng"?"Collaborative":"Colaboratividad", img:"/static/softskill/colaborativo.svg"},
+    {name:lengua==="eng"?"Creativity":"Creatividad", img:"/static/softskill/creativity.svg"},
+    {name:lengua==="eng"?"Goal-Oriented":"Orientado al Logro", img:"/static/softskill/goaloriented.svg"},
+    {name:lengua==="eng"?"Empathy":"Empatía", img:"/static/softskill/empatia.svg"},
+    {name:lengua==="eng"?"Positivity":"Positividad", img:"/static/softskill/positivo.svg"},
+    {name:lengua==="eng"?"Problem Solving":"Resolución de problemas", img:"/static/softskill/problemsolving.svg"},
+    {name:lengua==="eng"?"Organization":"Organización", img:"/static/softskill/organizado.svg"},
+    {name:lengua==="eng"?"Adaptability":"Adaptabilidad", img:"/static/softskill/adaptativo.svg"},
 
 ]
-const Skills=()=>{
 
     return(
         <Jumbotron fluid className="bg-white m-0" id="skills" >
-            <h1  className="display-4 pb-5 text-center">Skills</h1>
+            <h1  className="display-4 pb-5 text-center">{lengua==="eng"?<>Skills</>:<>Habilidades</>}</h1>
         <Tabs
         defaultActiveKey="TechSkills"
         id="uncontrolled-tab-example"
         className="mb-3"
         fill
       >
-        <Tab eventKey="TechSkills" title="Habilidades Técnica" >
+        <Tab eventKey="TechSkills" title={lengua==="eng"?"Tech Skills":"Habilidades Técnicas"} >
         
           <div className="skillcomponent">
             
@@ -63,7 +65,7 @@ const Skills=()=>{
        
           </div>
         </Tab>
-        <Tab eventKey="SoftSkills" title="Habilidades Blandas">
+        <Tab eventKey="SoftSkills" title={lengua==="eng"?"Soft Skills":"Habilidades Blandas"}>
         <div className="skillcomponent">
             
 

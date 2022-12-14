@@ -3,7 +3,7 @@ import Jumbotron from "./Jumbotron";
 import ProyectCard from "./ProyectCard";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
-const Proyects=()=>{
+const Proyects=({lengua})=>{
 
 const proyects= [
     {
@@ -16,8 +16,8 @@ const proyects= [
       {img:"/static/proyects/barbershop-abaut.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
       {img:"/static/proyects/barbershop-responsive.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
       name: "BarberShop App",
-      phrace: "Gestiona y administra servicios y productos de Barberías",
-      description:"Esta App permite ofrecer a los usuarios la posibilidad de comprar productos y servicios de las sucursales de las barberías inscritas, también implementa la gestión de usuarios según su roll (visitante, usuario, administrador), del cual depende las peticiones que se pueden hacer. Esta app también implementa paralela de pagos a través de la API de Paypal que facilita al usuario la experiencia de la adquisición del servicio.",
+      phrace: lengua==="eng"?"Manage and administer barbershop services and products.":"Gestiona y administra servicios y productos de barberías.",
+      description:lengua==="eng"?"This App allows users to be offered the possibility of buying products and services from registered barbershop branches, it also implements user management according to their role (visitor, user, administrator), on which the requests that can be made depend. This app also implements parallel payments through the Paypal API that facilitates the user's experience of acquiring the service.":"Esta App permite ofrecer a los usuarios la posibilidad de comprar productos y servicios de las sucursales de las barberías inscritas, también implementa la gestión de usuarios según su roll (visitante, usuario, administrador), del cual depende las peticiones que se pueden hacer. Esta app también implementa paralela de pagos a través de la API de Paypal que facilita al usuario la experiencia de la adquisición del servicio.",
       urlrepo:"https://github.com/Riguja89/Barbershop-e-commerce/",
       urldeploy:"https://barbershop-front-deploy.vercel.app/",
       usedTecnologies:[" React js, TypeScript, Redux, Mongodb, Mongoose, Express Js, Node Js, Tailwincss, Firebase."]
@@ -54,17 +54,14 @@ const proyects= [
         <Jumbotron      
         fluid
         id="proyects"
-        style={{
-          background: `linear-gradient(136deg, #4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1)`,
-          backgroundSize: "1200% 1200%",
-        }}
-        className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
+        style={{background:"linear-gradient(rgb(220 182 182 / 36%), rgb(236 213 213 / 33%))"}}
+        className="title text-dark min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-          <Container className="">
-            <h2 className="display-4 mb-5 text-center"> Recent Projects</h2>
+          <Container>
+            <h2 className="display-4 mb-5 text-center"> {lengua==="eng"?"Recent Projects":"Proyectos Recientes"}</h2>
             <Row>
                 {proyects.map((proyecto)=>(
-                    <ProyectCard 
+                    <ProyectCard
                     key={proyecto.name}
                     name={proyecto.name} 
                     phrace={proyecto.phrace}

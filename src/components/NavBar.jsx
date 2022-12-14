@@ -18,9 +18,9 @@ const NavBar=({setLengua, lengua})=>{
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
          
-            <Nav.Link href="#proyects">{lengua=="eng"?<>Projects</>:<>Proyectos</>}</Nav.Link>
-            <Nav.Link target="blanck" href="https://1drv.ms/b/s!AlSgIdEmzI5klrxgFeEXvKCJrOjtTA?e=6K0zLJ">{lengua=="eng"?<>Resume</>:<>Currículum</>}</Nav.Link>
-            <Nav.Link href="#aboutme">{lengua=="eng"?<>About</>:<>Sobre mi</>}</Nav.Link>
+            <Nav.Link href="#proyects">{lengua==="eng"?<>Projects</>:<>Proyectos</>}</Nav.Link>
+            <Nav.Link target="blanck" href="https://1drv.ms/b/s!AlSgIdEmzI5klrxgFeEXvKCJrOjtTA?e=6K0zLJ">{lengua==="eng"?<>Resume</>:<>Currículum</>}</Nav.Link>
+            <Nav.Link href="#aboutme">{lengua==="eng"?<>About</>:<>Sobre mi</>}</Nav.Link>
             
             <Nav.Link href="#skills">
                 {/* <Link Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={1000} > Skills</Link> */}

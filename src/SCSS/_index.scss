@@ -5,6 +5,8 @@ html {
     }
     scroll-behavior: smooth;
   }
+
+  
   
   body {
     margin: 0;
@@ -21,7 +23,7 @@ html {
   }
 
   .bg-gradient {
-    background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+    background: linear-gradient( rgb(197, 162, 162), rgba(255, 251, 251, 0.685));
   }
 
   .socialicons {
@@ -96,4 +98,10 @@ html {
     border: 2px solid white;
     transition: all 0.8s;
   }
+}
+.lead{
+  text-align: justify;
+}
+.lead2{
+  text-align: justify;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "./Jumbotron";
 
-const Home=()=>{
+const Home=({lengua})=>{
 
     const icons= [
         {
@@ -45,8 +45,9 @@ const Home=()=>{
           Jaime Gutierrez
           </h1>
           {/* <Typist> */}
-            <div className="lead typist">
-            Full Stack Developer | Ingineer | Programmer | Cyclist | Movie Lover 
+            <div className="lead typist text-center">
+            {lengua==="eng"?<>Full Stack Developer | Ingineer | Programmer | Cyclist | Movie Lover</>:
+            <>Desarrollador Full Stack | Ingeniero | Programador | Ciclista | Amante del cine</>}
             </div>
           {/* </Typist> */}
           <div className="p-5 ">
@@ -70,7 +71,8 @@ const Home=()=>{
             role="button"
             aria-label="Learn more about me"
           >
-            More about me
+           
+            {lengua==="eng"?<>More about me</>:<>Más sobre mi</>}
           </a>
         </Container>
       </Jumbotron>

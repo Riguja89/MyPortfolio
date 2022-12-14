@@ -9,26 +9,26 @@ const ProyectCard=(props)=>{
 
     return(
         <Col md={6}>
-        <Card border="dark" className="card card-outline-dark bg-dark my-3 p-2">
+        <Card className="card card-outline-dark shadow-lg bg-light my-3 p-2">
             <SlideImage imgs={props.imgs}></SlideImage>
             <Card.Title>{props.name}</Card.Title>
             <Card.Subtitle>{props.phrace}</Card.Subtitle>
             <Card.Text>
-            <Accordion className="dark">
-            <Accordion.Header>Ver mas ...</Accordion.Header>
-        <Accordion.Body>
+            <Accordion className="bg-light" >
+            <Accordion.Header >Ver mas ...</Accordion.Header>
+        <Accordion.Body className="lead2 bg-light">
         {props.description}
         </Accordion.Body>
             </Accordion>
             
             </Card.Text>
             <div>
-            <a href={props.urlrepo} target="_blank" className="btn btn-outline-light btn-lg "> 
+            <a href={props.urlrepo} target="_blank" className="btn btn-outline-dark btn-md "> 
             <Github  size={20} className="m-2"/>
             Repo
             </a>
 
-            <a href={props.urldeploy} target="_blank" className="btn btn-outline-light btn-lg m-2"> 
+            <a href={props.urldeploy} target="_blank" className="btn btn-outline-dark btn-md m-2"> 
             <Window size={20} className="m-2" />
              Deploy
             </a>
