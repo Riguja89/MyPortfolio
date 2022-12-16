@@ -13,15 +13,15 @@ const ProyectCard=(props)=>{
             <SlideImage imgs={props.imgs}></SlideImage>
             <Card.Title>{props.name}</Card.Title>
             <Card.Subtitle>{props.phrace}</Card.Subtitle>
-            <Card.Text>
+            <Card.Body>
             <Accordion className="bg-light" >
-            <Accordion.Header >Ver mas ...</Accordion.Header>
+            <Accordion.Header >{props.lengua==='eng'?<>See more ...</>:<>Ver más...</>} </Accordion.Header>
         <Accordion.Body className="lead2 bg-light">
         {props.description}
         </Accordion.Body>
             </Accordion>
             
-            </Card.Text>
+            </Card.Body>
             <div>
             <a href={props.urlrepo} target="_blank" className="btn btn-outline-dark btn-md "> 
             <Github  size={20} className="m-2"/>
@@ -34,12 +34,12 @@ const ProyectCard=(props)=>{
             </a>
             </div>
           
-            <p > Tecnologías usadas: 
+            <label className="fw-normal"> {props.lengua==='eng'?<>Used Technologies: </>:<>Tecnologías usadas: </>} 
             {props.usedTecnologies?(props.usedTecnologies.map(tec=>(
-                <>{ tec} </>
+                < label className="fw-light" key={tec}>{ tec} </label>
             ))):(<></>)}
 
-            </p>
+            </label>
         
 
         </Card>

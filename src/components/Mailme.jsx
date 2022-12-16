@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
-const Mailme=()=>{
+const Mailme=({lengua})=>{
     
     const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -15,38 +15,44 @@ const Mailme=()=>{
   const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_2y6crrs', 'template_ykgkm3y', form.current, 'vVh07og247qHCNLeh')
+    if(/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(form.current.user_email.value)&&form.current.user_name.value&&form.current.message.value){
+          emailjs.sendForm('service_2y6crrs', 'template_ykgkm3y', form.current, 'vVh07og247qHCNLeh')
       .then((result) => {
-          alert("El mensaje fue enviado exitosamente, te respondere tan pronto como sea posible")
-          form.current.user_name="";
+          alert( lengua==="eng"?"The message was sent successfully!!, I will answer you as soon as possible": "El mensaje fue enviado exitosamente!!, te responderé tan pronto como sea posible")
+          form.current.user_name.value="";
+          form.current.user_email.value="";
+          form.current.message.value="";
       }, (error) => {
-          console.log(error.text);
+          alert(error.text);
       });
+    }else{
+      alert( lengua==="eng"?"Make sure that all the fields are filled in correctly and the email is valid": "Asegurate que todos los campos están llenos correctamente y el correo sea valido")
+    }
   };
   
 
     return(
         <>
         <div className="mailme" onClick={handleShow}>
-            Escribeme 
+        {lengua==="eng"?<>Message Me</>:<>Escríbeme</>}
         </div>
 
         <Offcanvas variant="dark" show={show} onHide={handleClose} placement="end"  scroll={true} backdrop={true}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Envíame un Mensaje</Offcanvas.Title>
+          <Offcanvas.Title>{lengua==="eng"?<>Send me a Message</>:<>Envíame un Mensaje</>}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
         <Form ref={form} onSubmit={sendEmail}>
       <Form.Label>Name</Form.Label>
-      <Form.Control type="text" name="user_name" placeholder="Ingresa tu nombre" />
+      <Form.Control type="text" name="user_name" placeholder={lengua==="eng"?"Your name":"Ingresa tu nombre"} />
       <Form.Label>Email</Form.Label>
-      <Form.Control type="email"  name="user_email" placeholder="Ingresa tu email" />
+      <Form.Control type="email"  name="user_email" placeholder={lengua==="eng"?"Your email":"Ingresa tu email"} />
       <Form.Text className="text-muted">
-          Este email no será compartido a nadie mas.
+           {lengua==="eng"?<>This email will not be shared with anyone else.</>:<>Este email no será compartido a nadie mas.</>}
         </Form.Text> <br /> <br />
-        <Form.Label>Mensaje</Form.Label>
-        <Form.Control as="textarea" rows="5" type="text" placeholder="Mensaje ..." name="message" /> <br />
-      <Button variant="secondary" type="submit" value="Send" >Enviar</Button>
+        <Form.Label>Message</Form.Label>
+        <Form.Control as="textarea" rows="5" type="text" placeholder={lengua==="eng"?"Message...":"Mensaje ..."} name="message" /> <br />
+      <Button variant="secondary" type="submit" value="Send" >{lengua==="eng"?<>Send</>:<>Enviar</>}</Button>
     </Form>
         </Offcanvas.Body>
       </Offcanvas>

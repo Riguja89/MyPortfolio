@@ -29,11 +29,11 @@ const proyects= [
         {img:"/static/proyects/game-about.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
         {img:"/static/proyects/game-create.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
         name: "Video-Games APP",
-        phrace: "App para buscar y filtrar Videojuegos existentes",
-        description:"2 Esta es la desciocion para el proyecto en cuestin y sirve para prueva de como se veria un proyecto par ami portfolio",
+        phrace: lengua==="eng"?"App to search and filter existing video games.":"App para buscar y filtrar Videojuegos existentes",
+        description:lengua==="eng"?"Videgames App was built as an individual project of the Soy Henry BootCamp, it allows global searches of existing videogames worldwide, once the search is complete it brings a list of videogames which are shown in a preliminary way, filters can be applied to this list by genres and also allows you to sort them in such a way that you can find exactly the game you are looking for and consult its details; It also allows you to create personalized video games and store them in a database so that they can be consulted and deleted whenever you want.":"Videgames App fue construida como proyecto individual del BootCamp Soy Henry, permite hacer búsquedas globales de videojuegos existentes a nivel mundial, una vez la búsqueda se completa trae un listado de videojuegos los cuales son mostrados de forma preliminar, a este listado se le puede aplicar filtros por géneros y también permite ordenarlos de tal forma que se pueda encontrar exactamente el juego que se busca y consultar los detalles de este; también permite crear videojuegos personalizados y almacenarlos en una base de datos de tal forma que se puedan consultar y eliminar cuando se deseen.",
         urlrepo:"https://github.com/Riguja89/VideoGames",
         urldeploy:"https://videogame-clien-api.vercel.app/",
-        usedTecnologies:[" React Js, Redux, Node JS, Express JS, Sequelize, Postgesql, Html, CSS "]
+        usedTecnologies:[" React Js, Redux, Node JS, Express JS, Sequelize, Postgesql, Html, CSS. "]
     },
     {
       imgs: [{img:"/static/proyects/Weather-home.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
@@ -41,11 +41,11 @@ const proyects= [
       {img:"/static/proyects/Weather-detail2.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
       {img:"/static/proyects/Weather-about.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
       name: "My - Weather App",
-      phrace: "App para buscar el clima de cualquier ciudad del mundo",
-      description:"Esta aplicación fue creada como una de las homeworks para el bootcamp #Soyhenry de desarrollo Web Full Stack, con el fin de afianzar y practicar los conocimientos adquiridos en FrontEnd",
+      phrace: lengua==="eng"?"App to find the weather of any city in the world":"App para buscar el clima de cualquier ciudad del mundo",
+      description:lengua==="eng"?"This application was created as one of the homeworks for the #Soyhenry Full Stack Web development bootcamp, in order to consolidate and practice the knowledge acquired in FrontEnd":"Esta aplicación fue creada como una de las homeworks para el bootcamp #Soyhenry de desarrollo Web Full Stack, con el fin de afianzar y practicar los conocimientos adquiridos en FrontEnd",
       urlrepo:"https://github.com/Riguja89/Weather-APP",
       urldeploy:"https://weather-app-x37q.vercel.app/",
-      usedTecnologies:["CSS, HTML, Javascipt, React JS, Axios, Fetch, Reac-Router"]
+      usedTecnologies:["CSS, HTML, Javascipt, React JS, Axios, Fetch, Reac-Router."]
   },
   
   ]
@@ -60,17 +60,17 @@ const proyects= [
           <Container>
             <h2 className="display-4 mb-5 text-center"> {lengua==="eng"?"Recent Projects":"Proyectos Recientes"}</h2>
             <Row>
-                {proyects.map((proyecto)=>(
+                {proyects.map((proyecto,i)=>(
                     <ProyectCard
-                    key={proyecto.name}
+                    key={i}
                     name={proyecto.name} 
                     phrace={proyecto.phrace}
                     description={proyecto.description}
                     urlrepo={proyecto.urlrepo}
                     urldeploy={proyecto.urldeploy}
                     usedTecnologies={proyecto.usedTecnologies}
-                    imgs={proyecto.imgs}  >
-                                        
+                    imgs={proyecto.imgs}  
+                    lengua={lengua} >           
 
                     </ProyectCard>
                 ))}
