@@ -11,7 +11,7 @@ const NavBar=({setLengua, lengua})=>{
         <>
     <Navbar bg="dark" variant="dark" expand="lg" className="px-3 fixed-top "> 
     <Container>
-     <Navbar.Brand className="navbar-brand" href="/#home">
+     <Navbar.Brand className="navbar-brand" href="#home">
         {`<Jaime/>`}
       </Navbar.Brand>
      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
