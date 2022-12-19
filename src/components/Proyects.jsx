@@ -47,6 +47,18 @@ const proyects= [
       urldeploy:"https://weather-app-x37q.vercel.app/",
       usedTecnologies:["CSS, HTML, Javascipt, React JS, Axios, Fetch, Reac-Router."]
   },
+  {
+    imgs: [{img:"/static/proyects/portfolio-home.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+    {img:"/static/proyects/portfolio-aboutme.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+    {img:"/static/proyects/portfolio-projects.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+    {img:"/static/proyects/portfolio-skills.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
+    name: "My - Portfolio",
+    phrace: lengua==="eng"?"The personal website/portfolio of Jaime Gutierrez":"Sitio personal / Portafolio de Jaime Gutierrez",
+    description:lengua==="eng"?"Creation of Jaime Gutierrez's personal website or portfolio as a Full Stack developer where the most relevant projects and skills are shown":"Creacion del sitio Wep personal o portafolio como desarrollador Full Stack de Jaime Gutierrez donde se muestran los proyectos y habilidades mas relevantes",
+    urlrepo:"https://github.com/Riguja89/MyPortfolio",
+    urldeploy:"https://weather-app-x37q.vercel.app/",
+    usedTecnologies:["CSS, HTML, Javascipt, React JS, Bootstrap, Saas, Reac-Router."]
+},
   
   ]
 
