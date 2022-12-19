@@ -19,14 +19,15 @@ function toggleLengua(lengua){
   return (
     <React.Fragment>  
       <NavBar setLengua={toggleLengua} lengua={lengua}/>
-    <Routes>   
-    <Route path="/" element={<>
-      <Mailme lengua={lengua}/>
+    <Mailme lengua={lengua}/>
     <Home lengua={lengua}/>
     <AboutMe lengua={lengua}/>
     <Proyects lengua={lengua}/>
     <Skills lengua={lengua}/>
     <Footer lengua={lengua}/>
+    <Routes>   
+    <Route path="/" element={<>
+   
       </>} />
   
     

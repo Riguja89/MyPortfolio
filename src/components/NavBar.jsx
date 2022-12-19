@@ -24,7 +24,7 @@ const NavBar=({setLengua, lengua})=>{
             
             <Nav.Link href="#skills">
                 {/* <Link Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={1000} > Skills</Link> */}
-                {lengua=="eng"?<>Skills</>:<>Habilidades</>}
+                {lengua==="eng"?<>Skills</>:<>Habilidades</>}
                </Nav.Link>
           
         </Nav>
