@@ -56,7 +56,7 @@ const proyects= [
     phrace: lengua==="eng"?"The personal website/portfolio of Jaime Gutierrez":"Sitio personal / Portafolio de Jaime Gutierrez",
     description:lengua==="eng"?"Creation of Jaime Gutierrez's personal website or portfolio as a Full Stack developer where the most relevant projects and skills are shown":"Creacion del sitio Wep personal o portafolio como desarrollador Full Stack de Jaime Gutierrez donde se muestran los proyectos y habilidades mas relevantes",
     urlrepo:"https://github.com/Riguja89/MyPortfolio",
-    urldeploy:"https://weather-app-x37q.vercel.app/",
+    urldeploy:"https://riguja89.github.io/MyPortfolio/",
     usedTecnologies:["CSS, HTML, Javascipt, React JS, Bootstrap, Saas, Reac-Router."]
 },
   

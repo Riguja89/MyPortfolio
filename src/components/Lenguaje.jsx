@@ -6,7 +6,7 @@ function Lenguaje({setLengua}) {
   return (
     <ToggleButtonGroup type="radio" name="options" size="sm" defaultValue={"eng"} onChange={handleChange}>
     <ToggleButton variant="secondary" id="tbg-radio-1" value={"eng"}>
-      Eng
+      Eng <img src="https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/softskill/flag-usa.svg" alt="" />
     </ToggleButton>
     <ToggleButton variant="secondary" id="tbg-radio-2" value={"esp"}>
       Esp
