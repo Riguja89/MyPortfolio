@@ -46,7 +46,7 @@ const Home=({lengua})=>{
           </h1>
           {/* <Typist> */}
             <div className="lead typist text-center">
-            {lengua==="eng"?<>Full Stack Developer | Ingineer | Programmer | Cyclist | Movie Lover</>:
+            {lengua==="eng"?<>Full Stack Developer | Engineer | Programmer | Cyclist | Movie Lover</>:
             <>Desarrollador Full Stack | Ingeniero | Programador | Ciclista | Amante del cine</>}
             </div>
           {/* </Typist> */}
