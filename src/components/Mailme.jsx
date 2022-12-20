@@ -35,6 +35,7 @@ const Mailme=({lengua})=>{
         <>
         <div className="mailme" onClick={handleShow}>
         {lengua==="eng"?<>Message Me</>:<>Escríbeme</>}
+        <img src="https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/media/email-ico.svg" alt="email" className='iconflag' />
         </div>
 
         <Offcanvas variant="dark" show={show} onHide={handleClose} placement="end"  scroll={true} backdrop={true}>
