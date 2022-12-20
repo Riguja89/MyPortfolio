@@ -81,8 +81,8 @@ html {
 
 .mailme{
   position: fixed;
-  width: 23px;;
-  height: 120px;
+  width: 28px;;
+  height: 140px;
   border: 1px solid black;
   right:0;
   bottom:40%;
@@ -92,7 +92,6 @@ html {
   border-radius: 5px 0 0 5px;
   background-color: #eee;
   font-weight:600;
- 
   animation-duration: 1s;
   animation-name: animation2;
   animation-iteration-count: infinite;
@@ -119,4 +118,11 @@ html {
 }
 .iconflag {
   width: 20px;
+}
+.iconmail {
+  width: 24px;
+  padding: 0px;
+  margin-right: 5px;
+  margin-left: 0%;
+
 }
