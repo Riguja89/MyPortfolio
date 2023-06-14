@@ -23,6 +23,19 @@ const proyects= [
       usedTecnologies:[" React js, TypeScript, Redux, Mongodb, Mongoose, Express Js, Node Js, Tailwincss, Firebase."]
     },
     {
+      imgs: [{img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--home__001.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--menu__002.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--products__003.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--product__004.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
+      {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--responsive__005.jpg", resume:" Este es la explicacion de la imagen de Fondo"},],
+      name: "Brahma E-commerce",
+      phrace: lengua==="eng"?"Official Brahma e-commerce replica.":"Réplica del e-commerce de Brahma oficial.",
+      description:lengua==="eng"?"This replica allows users to make a purchase by completing the complete cycle of the product, from the window to the checkout and payment.":"Esta replica permite a los usuarios hacer una compra  haciendo el ciclo completo del producto, desde la vitrina hasta llegar al checkout y pago.",
+      urlrepo:"https://github.com/Riguja89/store-theme-brahma",
+      urldeploy:"https://riguja89.github.io/MyPortfolio/#proyects",
+      usedTecnologies:[" React js, TypeScript, Vtex IO, HTM, CSS"]
+    },
+    {
         imgs: [{img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/game-landing.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
         {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/game-home.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
         {img:"https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/game-detail.jpg", resume:" Este es la explicacion de la imagen de Fondo"},
