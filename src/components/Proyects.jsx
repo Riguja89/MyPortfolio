@@ -58,6 +58,32 @@ const Proyects = ({ lengua }) => {
     {
       imgs: [
         {
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/eost-mobile-home.jpg",
+          resume: " Este es la explicacion de la imagen de Fondo",
+        },
+        {
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/eost-desktop-home.jpg",
+          resume: " Este es la explicacion de la imagen de Fondo",
+        },
+      ],
+      name: "Eos Landing page",
+      phrace:
+        lengua === "eng"
+          ? "Dashboard-type home page for the EOS company"
+          : "Página de inicio tipo dashboard para la empresa EOS",
+      description:
+        lengua === "eng"
+          ? "Eos Landing Page was built as a demonstration of knowledge in VUE.js the technical test for the EOS company"
+          : "Eos Landing Page fue construida como demostracion de conocimiento en VUE.js la prueba tecnica para la empres EOS",
+      urlrepo: "https://github.com/Riguja89/eos-test",
+      urldeploy: "https://eos-test-tau.vercel.app/",
+      usedTecnologies: [
+        " Vue Js, SCSS, Html, CSS. ",
+      ],
+    },
+    {
+      imgs: [
+        {
           img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/brahma--home__001.jpg",
           resume: " Este es la explicacion de la imagen de Fondo",
         },
@@ -91,32 +117,46 @@ const Proyects = ({ lengua }) => {
       urldeploy: "https://riguja89.github.io/MyPortfolio/#proyects",
       usedTecnologies: [" React js, TypeScript, Vtex IO, HTM, CSS"],
     },
+
     {
       imgs: [
         {
-          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/eost-mobile-home.jpg",
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/solucionsoft-desktop-home.jpg",
           resume: " Este es la explicacion de la imagen de Fondo",
         },
         {
-          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/eost-desktop-home.jpg",
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/solucionsoft-desktop-home2.jpg",
+          resume: " Este es la explicacion de la imagen de Fondo",
+        },
+        {
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/solucionsoft-desktop-home3.jpg",
+          resume: " Este es la explicacion de la imagen de Fondo",
+        },
+        {
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/solucionsoft-desktop-home4.jpg",
+          resume: " Este es la explicacion de la imagen de Fondo",
+        },
+        {
+          img: "https://raw.githubusercontent.com/Riguja89/MyPortfolio/main/public/static/proyects/solucionsoft-mobile-home4.jpg",
           resume: " Este es la explicacion de la imagen de Fondo",
         },
       ],
-      name: "Eos Landing page",
+      name: "Solucion Soft",
       phrace:
         lengua === "eng"
-          ? "Dashboard-type home page for the EOS company"
-          : "Página de inicio tipo dashboard para la empresa EOS",
+          ? "Main page for the company SolucionSoft"
+          : "Página principal para la compañia SolucionSoft",
       description:
         lengua === "eng"
-          ? "Eos Landing Page was built as a demonstration of knowledge in VUE.js the technical test for the EOS company"
-          : "Eos Landing Page fue construida como demostracion de conocimiento en VUE.js la prueba tecnica para la empres EOS",
-      urlrepo: "https://github.com/Riguja89/eos-test",
-      urldeploy: "https://eos-test-tau.vercel.app/",
+          ? "Main page of information and contact for the company Soft Solution, made following full pixel perfect according to the Figma document provided by the company."
+          : "Página principal de información y contacto para la empresa Solución Soft, realizada siguiendo a cabalidad pixel perfect según documento Figma aportado por la compañía. ",
+      urlrepo: "https://github.com/Riguja89/solucionsofttest",
+      urldeploy: " https://solucionsofttest.vercel.app/",
       usedTecnologies: [
-        " React Js, Redux, Node JS, Express JS, Sequelize, Postgesql, Html, CSS. ",
+        " React Js, SCSS, Html, CSS, WhatsApp api",
       ],
     },
+   
     {
       imgs: [
         {
